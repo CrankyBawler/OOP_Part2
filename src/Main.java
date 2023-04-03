@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         Car[] cars = {
@@ -26,7 +24,7 @@ public class Main {
             vehicles[i + cars.length + trucks.length] = bicycles[i];
         }
 
-        ServiceStation station = new ServiceStation();
+        ServiceStationInterface station = new ServiceStation();
         station.check(cars[0], null, null);
         station.check(cars[1], null, null);
         station.check(null, bicycles[0], null);

@@ -1,13 +1,17 @@
-public class ServiceStation {
+public class ServiceStation implements ServiceStationInterface {
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
+    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
+    @Override
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+    @Override
     public void check(Car car, Bicycle bicycle, Truck truck) {
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
