@@ -25,12 +25,12 @@ public class Main {
         }
 
         ServiceStationInterface station = new ServiceStation();
-        station.check(cars[0], null, null);
-        station.check(cars[1], null, null);
-        station.check(null, bicycles[0], null);
-        station.check(null, bicycles[1], null);
-        station.check(null, null, trucks[0]);
-        station.check(null, null, trucks[1]);
+        station.checkCar(cars[0], null, null);
+        station.checkCar(cars[1], null, null);
+        station.checkBicycle(null, bicycles[0], null);
+        station.checkBicycle(null, bicycles[1], null);
+        station.checkTruck(null, null, trucks[0]);
+        station.checkTruck(null, null, trucks[1]);
     }
 }
 
