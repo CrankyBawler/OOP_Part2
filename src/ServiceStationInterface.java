@@ -1,7 +1,7 @@
 public interface ServiceStationInterface {
-    void checkCar(Car car, Bicycle bicycle, Truck truck);
+    void checkCar(Car car);
 
-    void checkTruck(Car car, Bicycle bicycle, Truck truck);
+    void checkTruck(Truck truck);
 
-    void checkBicycle(Car car, Bicycle bicycle, Truck truck);
+    void checkBicycle(Bicycle bicycle);
 }
